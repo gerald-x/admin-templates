@@ -1,0 +1,34 @@
+.footer-text {
+    font-size: 10px;
+}
+
+.black-opacity {
+    color: rgba(0, 0, 0, 0.2);
+}
+
+.page-bottom {
+    bottom: 0;
+}
+
+.width-100 {
+    min-width: 100%;
+}
+
+textarea {
+    resize: none !important;
+}
+
+.w-md {
+    width: 50% !important;
+}
+
+.margin-y {
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+@media (max-width: 768px) {
+    .w-md {
+        width: 75% !important;
+    }
+}
