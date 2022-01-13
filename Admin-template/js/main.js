@@ -1,8 +1,27 @@
 function popUp() {
-    console.log("succesful");
+    var popUpBox = document.getElementById("popUp");
+    var property = window.getComputedStyle(popUpBox).display;
     setTimeout(() => {
+        if (property.toString() === "none") {
+            popUpBox.style.display = "block";
+            popUpBox.style.animationPlayState = "running";
+            popUpBox.style.zIndex = 500;
+        }
 
-    }, 2000);
+    }, 1000);
+
+    var button = document.getElementById("btn-close");
+
+    if (button) {
+        button.onclick = () => {
+            property = window.getComputedStyle(popUpBox).display;
+            if (property.toString() === "block") {
+                popUpBox.style.display = "none";
+                popUpBox.style.zIndex = -15;
+            }
+
+        }
+    }
 
 }
 

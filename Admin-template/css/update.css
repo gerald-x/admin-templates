@@ -24,7 +24,36 @@ textarea {
 
 .margin-y {
     margin-top: 10%;
-    margin-bottom: 10%;
+    margin-bottom: 10% !important;
+}
+
+@keyframes zoomIn {
+    0% {
+        display: none;
+    }
+    100% {
+        display: block;
+    }
+}
+
+#popUp {
+    animation-name: zoomIn;
+    animation-play-state: paused;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    display: none;
+    position: absolute;
+}
+
+#icon {
+    width: max-content;
+    padding: 1%;
+    margin-left: auto;
+    margin-right: 5%;
+}
+
+#close {
+    color: white !important;
 }
 
 @media (max-width: 768px) {
