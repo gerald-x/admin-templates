@@ -59,6 +59,10 @@
             <nav class="navbar-mobile">
                 <div class="container-fluid">
                     <ul class="navbar-mobile__list list-unstyled">
+                        <li class="d-flex">
+                            <button type="button" value="0" class="btn btn-sm font-small border btn-active" onclick="Active(this.value)">Available</button>
+                            <button type="button" value="1" class="btn btn-sm font-small border btn-unactive" onclick="Active(this.value)">Unavailable</button>
+                        </li>
                         <li>
                             <a href="index.html">
                                 <i class="fas fa-tachometer-alt"></i>Dashboard</a>
@@ -100,6 +104,10 @@
             <div class="menu-sidebar__content js-scrollbar1">
                 <nav class="navbar-sidebar">
                     <ul class="list-unstyled navbar__list">
+                        <li class="d-flex">
+                            <button type="button" value="0" class="btn font-small border btn-active" onclick="Active(this.value)">Available</button>
+                            <button type="button" value="1" class="btn font-small border btn-unactive" onclick="Active(this.value)">Unavailable</button>
+                        </li>
                         <li>
                             <a href="index.html">
                                 <i class="fas fa-tachometer-alt"></i>Dashboard</a>
@@ -147,42 +155,42 @@
                             <div class="d-none d-md-block input-group-prepend">
                                 <span class="input-group-text font-weight-bold font-italic">First Name</span>
                             </div>
-                            <input class="form-control" type="text" name="" id="" value="Olivia" disabled="true">
+                            <input class="form-control" type="text" name="" id="" value="Olivia">
                             <div class="input-group-append">
-                                <a href="" class="input-group-text"><i class="far fa-edit"></i></a>
+                                <button type="button" class="btn btn-success">save</button>
                             </div>
                         </div>
                         <div class="input-group my-4">
                             <div class="d-none d-md-block acc_active">
                                 <span class="input-group-text font-weight-bold font-italic">Last Name</span>
                             </div>
-                            <input class="form-control" type="text" name="" id="" value="Rodriguez" disabled="true">
+                            <input class="form-control" type="text" name="" id="" value="Rodriguez">
                             <div class="input-group-append">
-                                <a href="#" class="input-group-text"><i class="far fa-edit"></i></a>
+                                <button type="button" class="btn btn-success">save</button>
                             </div>
                         </div>
                         <div class="input-group my-4">
                             <div class="d-none d-md-block input-group-prepend">
                                 <span class="input-group-text font-weight-bold font-italic">Email</span>
                             </div>
-                            <input class="form-control" type="email" name="" id="" value="houseofcards@gmail.com" disabled="true">
+                            <input class="form-control" type="email" name="" id="" value="houseofcards@gmail.com">
                             <div class="input-group-append">
-                                <a href="#" class="input-group-text"><i class="far fa-edit"></i></a>
+                                <button type="button" class="btn btn-success">save</button>
                             </div>
                         </div>
                         <div class="input-group my-4">
-                            <textarea name="" id="" cols="30" rows="10" class="form-control" disabled>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit eum odio dignissimos maiores, autem quo quidem vel minus nemo, dolores voluptatem sapiente temporibus earum possimus pariatur labore quibusdam sint dolore?</textarea>
+                            <textarea name="" id="" cols="30" rows="10" class="form-control">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit eum odio dignissimos maiores, autem quo quidem vel minus nemo, dolores voluptatem sapiente temporibus earum possimus pariatur labore quibusdam sint dolore?</textarea>
                             <div class="input-group-append">
-                                <a href="#" class="input-group-text"><i class="far fa-edit"></i></a>
+                                <button type="button" class="btn btn-success">save</button>
                             </div>
                         </div>
                         <div class="input-group my-4">
                             <div class="d-none d-md-block input-group-prepend">
                                 <span class="input-group-text font-weight-bold font-italic">Password</span>
                             </div>
-                            <input class="form-control" type="password" name="" id="" value="houseofcards@gmail.com" disabled="true">
+                            <input class="form-control" type="password" name="" id="" value="houseofcards@gmail.com">
                             <div class="input-group-append">
-                                <a href="#" class="input-group-text"><i class="far fa-edit"></i></a>
+                                <button type="button" class="btn btn-success">save</button>
                             </div>
                         </div>
                     </div>
