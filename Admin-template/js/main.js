@@ -25,7 +25,50 @@ function popUp() {
 
 }
 
+// js code for availaibility
 
+function Active(clickValue) {
+    localStorage.setItem("active", clickValue);
+
+    if (clickValue.toString() === "0") {
+        document.querySelectorAll(".btn-active").forEach((btn) => {
+            btn.classList.add("btn-success");
+        })
+        document.querySelectorAll(".btn-unactive").forEach((btn) => {
+            btn.classList.remove("btn-success");
+        })
+    } else {
+        document.querySelectorAll(".btn-active").forEach((btn) => {
+            btn.classList.remove("btn-success");
+        })
+        document.querySelectorAll(".btn-unactive").forEach((btn) => {
+            btn.classList.add("btn-success");
+        })
+    }
+
+}
+
+var active = localStorage.getItem("active");
+
+if (!active) {
+    active = 0;
+}
+
+if (active.toString() === "0") {
+    document.querySelectorAll(".btn-active").forEach((btn) => {
+        btn.classList.add("btn-success");
+    })
+    document.querySelectorAll(".btn-unactive").forEach((btn) => {
+        btn.classList.remove("btn-success");
+    })
+} else {
+    document.querySelectorAll(".btn-active").forEach((btn) => {
+        btn.classList.remove("btn-success");
+    })
+    document.querySelectorAll(".btn-unactive").forEach((btn) => {
+        btn.classList.add("btn-success");
+    })
+}
 
 
 
