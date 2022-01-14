@@ -329,20 +329,20 @@ section {
 
 .page-wrapper {
     overflow: hidden;
-    background: #e5e5e5;
+    background: white;
     padding-bottom: 8vh;
 }
 
 @media (max-width: 991px) {
     .page-wrapper {
         overflow: auto;
-        background: #e5e5e5;
+        background: white;
         padding-bottom: 12vh;
     }
 }
 
 .page-container {
-    background: #e5e5e5;
+    background: white;
     padding-left: 300px;
 }
 
@@ -387,14 +387,16 @@ section {
 }
 
 .page-content--bge5 {
-    background: #e5e5e5;
+    background: white;
     height: 100vh;
 }
 
 .login-wrap {
     max-width: 540px;
-    padding-top: 8vh;
+    padding-top: 7vh;
     margin: 0 auto;
+    background-color: white;
+    height: max-content;
 }
 
 .login-logo {
@@ -440,7 +442,7 @@ section {
 }
 
 .login-content {
-    background: #fff;
+    background: whitesmoke;
     padding: 30px 30px 20px;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
@@ -1647,6 +1649,7 @@ section {
     bottom: 0;
     background: #fff;
     overflow-y: auto;
+    border-right: 2px solid rgba(0, 0, 0, 0.1);
 }
 
 .menu-sidebar .logo {
